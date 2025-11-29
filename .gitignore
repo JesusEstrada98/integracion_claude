@@ -1,0 +1,233 @@
+# ===========================================
+# PBP-v01 Monorepo .gitignore
+# Astro + Payload CMS + Flox Environment
+# ===========================================
+
+# Flox Environment
+# Recommended to ignore as it contains system-specific paths and caches
+.flox/cache/
+.flox/log/
+.flox/run/
+.flox/.zcompdump*
+
+# Keep essential flox configuration but ignore system-specific files
+# Uncomment the line below if you want to share flox environment completely
+# .flox/
+
+# ===========================================
+# ASTRO FRONTEND
+# ===========================================
+
+# Astro build output
+frontend/dist/
+frontend/.astro/
+
+# Astro generated types
+frontend/src/env.d.ts
+
+# ===========================================
+# PAYLOAD CMS BACKEND (Future)
+# ===========================================
+
+# Payload build output
+backend/dist/
+backend/build/
+
+# Payload generated files
+backend/.temp/
+backend/payload-types.ts
+
+# Media uploads (configure based on your media strategy)
+backend/media/
+backend/uploads/
+
+# ===========================================
+# NODE.JS & PACKAGE MANAGERS
+# ===========================================
+
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Package manager lock files (keep these, but backup strategy may vary)
+# Uncomment if you prefer not to commit lock files:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# NPM cache
+.npm
+.yarn/
+
+# ===========================================
+# ENVIRONMENT & SECRETS
+# ===========================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# Runtime secrets
+.env.*.local
+
+# ===========================================
+# DEVELOPMENT TOOLS
+# ===========================================
+
+# IDE and editors
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+.tmp/
+.temp/
+tmp/
+temp/
+
+# ===========================================
+# OPERATING SYSTEM
+# ===========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ===========================================
+# BUILD & DIST FILES
+# ===========================================
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Static generation
+.cache/
+.parcel-cache/
+
+# ===========================================
+# DATABASES & DATA
+# ===========================================
+
+# Local databases (SQLite, etc.)
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+
+# ===========================================
+# LOGS & RUNTIME
+# ===========================================
+
+# Log files
+*.log
+logs/
+*.log.*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# ===========================================
+# TESTING
+# ===========================================
+
+# Test results
+.coverage/
+test-results/
+playwright-report/
+test-results.xml
+
+# ===========================================
+# CLOUD & DEPLOYMENT
+# ===========================================
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+
+# ===========================================
+# MISC
+# ===========================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archive files (unless needed for deployment)
+*.tar.gz
+*.zip
+*.rar
+
+# Certificates and keys (should never be committed)
+*.pem
+*.key
+*.crt
+*.p12
+
+# ===========================================
+# PROJECT SPECIFIC
+# ===========================================
+
+# Generated documentation
+docs/generated/
+
+# Temporary development files
+scratch/
+playground/
+
+# Local development overrides
+dev-overrides/
+local-config.*
+.flox/postgres-data/
+backups/

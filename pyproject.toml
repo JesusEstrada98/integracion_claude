@@ -1,0 +1,32 @@
+[project]
+name = "pbp-v01"
+version = "0.1.0"
+description = "PBP v01 - Full-stack Astro + PayloadCMS + Supabase project"
+authors = [
+    {name = "Alejo", email = "alejo@example.com"}
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+    "mypy"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true

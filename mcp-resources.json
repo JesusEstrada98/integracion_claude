@@ -1,0 +1,46 @@
+{
+  "resources": {
+    "project_files": {
+      "type": "filesystem",
+      "path": "./",
+      "description": "Project source files and configurations"
+    },
+    "frontend": {
+      "type": "filesystem",
+      "path": "./frontend",
+      "description": "Astro frontend application files"
+    },
+    "backend": {
+      "type": "filesystem", 
+      "path": "./backend",
+      "description": "PayloadCMS backend application files"
+    },
+    "documentation": {
+      "type": "filesystem",
+      "path": "./docs",
+      "description": "Project documentation"
+    },
+    "git_repository": {
+      "type": "git",
+      "path": ".",
+      "description": "Git version control for the project"
+    }
+  },
+  "tools": {
+    "development": [
+      "npm",
+      "flox",
+      "git"
+    ],
+    "services": [
+      "astro",
+      "payload",
+      "supabase"
+    ]
+  },
+  "environment": {
+    "manager": "flox",
+    "node_version": "22.17.0",
+    "package_manager": "npm"
+  }
+}

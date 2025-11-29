@@ -1,0 +1,26 @@
+{
+  "name": "pbp-v01",
+  "version": "1.0.0",
+  "description": "Astro + PayloadCMS + Supabase Monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "./dev-scripts.sh dev",
+    "setup": "./dev-scripts.sh setup",
+    "check": "./dev-scripts.sh check",
+    "supabase:setup": "./dev-scripts.sh supabase:setup",
+    "supabase:test": "./dev-scripts.sh supabase:test"
+  },
+  "devDependencies": {
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "astro",
+    "payload",
+    "supabase",
+    "monorepo",
+    "flox"
+  ],
+  "author": "",
+  "license": "ISC"
+}
